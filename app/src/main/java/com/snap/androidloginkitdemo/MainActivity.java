@@ -120,7 +120,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void SignOutUser(){
         Log.d("SnapkitLogin", "The user wants to log out");
-        SnapLogin.getAuthTokenManager(this).revokeToken();
+        SnapLogin.getAuthTokenManager(this).clearToken();
 
         boolean isUserLoggedIn = SnapLogin.isUserLoggedIn(getBaseContext());
 
